@@ -1,0 +1,7 @@
+.github/
+.gitignore
+.npmignore
+CONTRIBUTING.md
+docs/
+*.log
+.DS_Store
