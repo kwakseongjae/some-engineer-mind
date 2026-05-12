@@ -1,7 +1,7 @@
 ---
 name: ask-before-guess
-description: "Triggers on uncertainty signals — 'not sure', 'maybe', 'probably', 'I think', 'should this work', '맞나 모르겠어', '확실하지 않은데', '감으로', '아마', '어쩌면'. Stops Claude from stacking guesses on top of unknowns; redirects to the say-and-ask path first. 모르는 지점 위에 추측을 쌓아 코드를 만들지 않게 하고, 막혔을 때 *말하고 묻는* 길을 먼저 권하는 엔지니어링 철학 스킬. 처음 쓰는 라이브러리·API·언어 기능, 익숙하지 않은 코드베이스, 에러 메시지 해석, '이거 왜 이렇게 되어 있지' 같은 의아함, 검색 없이 답 찍기 직전, 문서를 안 본 채 코드 짜는 충동에도 발동. 바이브코더가 '잘 모르겠는데 일단 짜볼게' 모드일 때 특히 강하게 트리거."
-when_to_use: "Whenever uncertainty surfaces — first use of an unfamiliar API, vibe-coding mode, error-message guessing, or user expresses doubt. 사용자가 불확실성을 드러내거나 추측으로 코드를 짤 위험이 보일 때."
+description: Stops Claude from stacking guesses on top of unknowns. When uncertainty appears in code, configs, APIs, or error messages, this skill forces a brief pause to verify — by reading source, running a small check, or asking the user — instead of fabricating a plausible-sounding answer. 모르는 지점 위에 추측을 쌓아 코드를 만들지 않도록, 막혔을 때 *말하고 묻는* 길을 먼저 권하는 엔지니어링 철학 스킬.
+when_to_use: Use when the user or assistant expresses uncertainty — phrases like "I'm not sure", "maybe", "probably", "I think", "should this work", "맞나 모르겠어", "확실하지 않은데", "감으로", "아마", "어쩌면" — or whenever code is about to be written against an unverified assumption about an API signature, library behavior, file path, schema, or error message. Especially strong during vibe-coding ("일단 짜볼게") and first use of an unfamiliar library or codebase.
 allowed-tools: Read Grep Glob WebFetch
 ---
 

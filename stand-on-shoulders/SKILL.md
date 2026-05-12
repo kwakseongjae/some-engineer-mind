@@ -1,7 +1,7 @@
 ---
 name: stand-on-shoulders
-description: "Triggers on design/architecture-start signals — 'design', 'architect', 'structure this', 'best practice', '이거 어떻게 짜지', '구조 어떻게 잡지', '설계해줘', '아키텍처', '처음부터 짜야 하나', '흔히 어떻게 해'. Checks for established patterns/idioms before designing from scratch. 무언가를 새로 설계·구현·구조화하기 전에, 같은 문제를 풀기 위해 이미 정립된 디자인 패턴·아키텍처·관용구가 있는지 먼저 살피게 만드는 엔지니어링 철학 스킬. 새 모듈·새 서비스·새 기능·상태 관리·인증·캐싱·큐·비동기 처리·에러 핸들링·API 설계·폼 처리·라우팅·데이터 흐름 등 *반복 등장하는 문제 유형*에서 발동. 바이브코딩으로 처음부터 새로 짜려는 충동이 보일 때 특히 강하게 발동."
-when_to_use: "Whenever the user is about to design, structure, or start something — even if they don't explicitly ask for a pattern. 백지에서 새 설계가 시작되려는 모든 자리에서 기존 패턴을 먼저 살펴야 할 때."
+description: Surveys established design patterns, framework conventions, and idioms before designing anything from scratch. When the user is about to structure a new module, service, or feature, this skill names the underlying problem type (state management, caching, async handling, etc.) and points to the canonical solution before falling back to bespoke construction. 무언가를 새로 설계·구현·구조화하기 전에 이미 정립된 디자인 패턴이 있는지 먼저 살피는 엔지니어링 철학 스킬.
+when_to_use: Use whenever the user is about to design, structure, or begin building something — phrases like "이거 어떻게 짜지", "구조 어떻게 잡지", "설계해줘", "아키텍처", "design", "architect", "structure this", "처음부터 짜야 하나", "흔히 어떻게 해", "best practice" — and especially for recurring problem types like state management, authentication, caching, queues, async handling, error handling, API design, form processing, routing, and data flow. Strongest against the vibe-coding urge to start from a blank file.
 allowed-tools: Read WebSearch WebFetch
 ---
 

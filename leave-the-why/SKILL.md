@@ -1,7 +1,7 @@
 ---
 name: leave-the-why
-description: "Triggers on documentation/commit moments — 'commit message', 'PR description', 'why is this here', '커밋할게', 'PR 올릴게', '왜 이렇게 짰어?', '이상해 보이는데', '여기 주석 좀'. Leaves the WHY beside non-obvious code, in commits, and in PR descriptions — never the obvious WHAT. 코드를 짠 사람의 머릿속에만 있는 *왜*를, 코드 옆에 한 줄로 남기게 만드는 엔지니어링 철학 스킬. 비자명한 결정·우회·hack·이상해 보이는 코드를 작성하거나 마주칠 때 발동. 작업 마무리 시점, 미래의 본인이나 다른 사람이 같은 자리를 다시 헤맬 가능성이 있는 모든 상황에서 트리거. 의례적 docstring·자명한 주석은 *오히려 막는다* — 비자명한 *왜*만 남기게."
-when_to_use: "Whenever a non-obvious decision is being made, committed, or about to be lost into the past. 비자명한 결정·우회·hack을 코드/커밋/PR로 남기는 자리에서 *왜*를 한 줄 남겨야 할 때."
+description: Leaves the WHY beside non-obvious decisions — in commit messages, PR descriptions, and short comments next to surprising code. Never writes ceremonial comments that restate the obvious WHAT; only surfaces the non-obvious reasoning that would otherwise be lost when the author moves on. 코드를 짠 사람의 머릿속에만 있는 *왜*를 코드 옆에 한 줄로 남기는 엔지니어링 철학 스킬.
+when_to_use: Use when a non-obvious decision is being made, committed, or is about to be lost — typical moments include writing a commit message ("커밋할게", "commit message"), drafting a PR description ("PR 올릴게", "PR description"), encountering a workaround or hack, or answering questions like "이거 왜 이래?", "이상해 보이는데", "여기 주석 좀", "why is this here". Actively avoids docstrings on self-explanatory code; "fix bug" / "update" / "refactor" style messages are rewritten with the actual reason.
 allowed-tools: Read Edit Bash(git *)
 ---
 

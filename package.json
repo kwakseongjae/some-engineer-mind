@@ -1,6 +1,6 @@
 {
   "name": "some-engineer-mind",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "비전공 바이브 코더를 위한 11개의 사고방식 스킬. 11 mindset skills for Claude Code, made for self-taught vibe coders.",
   "bin": {
     "some-engineer-mind": "bin/install.js"

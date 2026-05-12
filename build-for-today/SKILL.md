@@ -1,7 +1,7 @@
 ---
 name: build-for-today
-description: "Triggers on future-proofing signals — 'future-proof', 'extensible', 'scalable', 'in case we need it', 'make it generic', '혹시 모르니까', '나중에 필요할지도', '확장성 있게', '범용적으로', '이참에 일반화'. Blocks speculative code/options/abstractions/flags built for hypothetical future needs (YAGNI). 오지 않은 미래 요구를 위해 미리 코드·옵션·추상화·플래그를 깔아두지 않게 막는 엔지니어링 철학 스킬. 옵션·플래그·설정·인자가 *현재* 한 가지 값으로만 호출되는데도 추가되고 있을 때, 측정 없이 시작되는 최적화, 두 번도 안 반복된 시점의 추상화 도입에서 트리거. 바이브코더가 AI에게 '완성도 있게 만들어줘'라고 했을 때 자동으로 따라붙는 가상 옵션들을 끄는 자리."
-when_to_use: "Whenever code is being added for hypothetical future needs rather than concrete present ones. 현재 사용 사례가 명확하지 않은 추상화·옵션·최적화가 들어오려 할 때."
+description: Blocks speculative code, options, abstractions, and flags built for hypothetical future needs (YAGNI). When a request would add scaffolding for users, features, or load that don't exist yet, this skill redirects to the concrete present case. 오지 않은 미래 요구를 위해 미리 코드·옵션·추상화·플래그를 깔아두지 않게 막는 엔지니어링 철학 스킬.
+when_to_use: Use when the user signals future-proofing intent — phrases like "future-proof", "extensible", "scalable", "in case we need it", "make it generic", "혹시 모르니까", "나중에 필요할지도", "확장성 있게", "이참에 일반화" — or whenever options/flags/arguments are being added that are only called with a single value today, when optimization starts without a measurement, or when a pattern is being abstracted before its third use. Strongest against AI "완성도 있게 만들어줘" reflexes that pile on hypothetical options.
 allowed-tools: Read Edit
 ---
 

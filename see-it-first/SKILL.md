@@ -1,7 +1,7 @@
 ---
 name: see-it-first
-description: "Triggers on bug/symptom signals — 'bug', 'broken', 'not working', 'error', 'doesn't work', 'fix', '버그', '안 돼', '이상해', '에러', '왜 이러지', '고쳐줘'. Stops the guess→patch loop and forces reproduction first. 버그·이상 동작 앞에서 *추측 → 패치*의 유혹을 끊고, 먼저 *내 눈앞에 똑같이 재현*하게 만드는 엔지니어링 철학 스킬. '가끔 안 돼요', '어쩌다 한 번', '사용자가 이렇다는데' 같은 *간헐적/전언* 상황에서 특히 강하게 발동. 로그·에러 메시지·스크린샷이 없는 채로 고치려 할 때, 추측 기반 패치를 시도하려 할 때, '아마 여기일 거야'로 진입할 때 발동. 바이브코더가 '안 돼서 다시 짜볼게' 모드로 갈 때 멈추게 함."
-when_to_use: "Whenever something doesn't work — even if user just describes symptoms vaguely. 증상만 있고 재현이 아직 안 된 모든 디버깅 상황에서."
+description: Forces reproduction before any fix. When something doesn't work, this skill stops the symptom→guess→patch loop and first reproduces the bug locally on the same branch, data, and inputs the user saw — because an unreproduced bug is an unsolved one. 버그·이상 동작 앞에서 추측 패치의 유혹을 끊고, 먼저 눈앞에 똑같이 재현하게 만드는 엔지니어링 철학 스킬.
+when_to_use: Use whenever something doesn't work — phrases like "bug", "broken", "not working", "error", "doesn't work", "fix", "버그", "안 돼", "이상해", "에러", "왜 이러지", "고쳐줘" — and especially in intermittent or hearsay reports ("가끔 안 돼요", "어쩌다 한 번", "사용자가 이렇다는데", "PM이 메인 깨졌대요"), or when a fix is about to be attempted without a log, screenshot, or reproduction steps in hand.
 allowed-tools: Read Bash Grep
 ---
 

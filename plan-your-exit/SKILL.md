@@ -1,7 +1,7 @@
 ---
 name: plan-your-exit
-description: "Triggers on irreversible-action signals — 'deploy', 'migrate', 'drop table', 'force push', 'production', 'release', 'rollback', 'upgrade', '배포할게', 'DB 건드릴게', '이거 지워줘', '한꺼번에 바꾸자', '큰 리팩터'. Builds the retreat path BEFORE entering risky actions. 실패할 가능성이 있는 작업 — 배포, 데이터 삭제·변경, 마이그레이션, 외부 API 호출, 큰 리팩터, 의존성 업그레이드, 강제 푸시 — 에 들어가기 *전에* 되돌아올 길을 먼저 마련하게 만드는 엔지니어링 철학 스킬. 외부 시스템·공유 상태·사용자 데이터·실서비스에 영향을 주는 모든 작업에서 발동. '잠깐이면 돼', '금방 끝나'로 위험한 일을 가볍게 넘기려 할 때 특히 강하게 트리거. 바이브코더가 prod에 직접 손대려 할 때 안전망 역할."
-when_to_use: "Whenever an action could leave damage that's hard to undo in 5 minutes — deploys, deletions, migrations, force pushes. 5분 안에 원상복구 불가능한 작업에 들어가기 전."
+description: Treats failure as a precondition for risky work. Before deploys, data deletions, migrations, force pushes, dependency upgrades, or other hard-to-undo actions, this skill builds the retreat path first — dry-run, backup, staged rollout, explicit rollback procedure written down — so the user can enter the action with composure. 실패할 가능성이 있는 작업에 들어가기 전에 되돌아올 길을 먼저 마련하는 엔지니어링 철학 스킬.
+when_to_use: Use whenever an action could leave damage that can't be undone in five minutes — deploys, "DROP TABLE", "DELETE FROM", "force push", "migrate", "production", "release", "rollback", "upgrade", "배포할게", "DB 건드릴게", "이거 지워줘", "한꺼번에 바꾸자", "큰 리팩터" — and especially when the risk is being dismissed with "잠깐이면 돼", "금방 끝나", or when the user is about to touch prod directly during vibe-coding.
 allowed-tools: Read Edit Bash
 ---
 

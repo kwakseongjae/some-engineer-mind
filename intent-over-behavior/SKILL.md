@@ -1,7 +1,7 @@
 ---
 name: intent-over-behavior
-description: "Triggers on intent-less coding signals — 'just make it work', 'just get it working', 'quickly hack together', '그냥 돌아가게', '일단 동작만'. Also fires when user writes/edits/reviews/refactors/generates any code. Forces the WHY before the HOW. 코드를 작성·수정·리뷰·생성·리팩터·추가할 때 '동작하느냐'보다 '왜 만드는가(의도)'를 먼저 짚게 만드는 엔지니어링 철학 스킬. 새 함수/모듈/기능을 만들 때, 무언가 추가/삭제/수정하기 전, 코드 리뷰·리팩터링·테스트 작성·버그 수정·설계 결정·바이브코딩 상황 전반에서 발동. '이 코드 왜 짜는 거지?', '이거 추가해도 돼?', '필요한 코드인지 모르겠어' 같은 망설임 신호에서도 트리거."
-when_to_use: "Whenever the user is writing, editing, reviewing, refactoring, generating, or adding any code — even if intent is not explicitly mentioned. 코드 변경이 일어나려는 모든 순간에 의도부터 짚어야 할 때."
+description: Forces the WHY before the HOW when code is being written, edited, reviewed, refactored, or generated. Surfaces the intent behind a change in one sentence so the result is purposeful rather than merely working, and prefers not writing code at all when intent stays unclear. 코드를 작성·수정·리뷰·생성·리팩터할 때 '동작하느냐'보다 '왜 만드는가(의도)'를 먼저 짚게 만드는 엔지니어링 철학 스킬.
+when_to_use: Use whenever the user is about to write, edit, review, refactor, or generate any code — and most strongly when intent is being skipped, e.g. "just make it work", "just get it working", "quickly hack together", "그냥 돌아가게", "일단 동작만". Also use when the user shows hesitation ("이 코드 왜 짜는 거지?", "이거 추가해도 돼?", "필요한 코드인지 모르겠어") or when commit messages, PR descriptions, or design decisions are being drafted.
 allowed-tools: Read Grep
 ---
 

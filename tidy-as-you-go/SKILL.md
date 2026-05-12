@@ -1,7 +1,7 @@
 ---
 name: tidy-as-you-go
-description: "Triggers on completion/commit/cleanup moments — 'done', 'ready to commit', 'wrap up', 'clean up', 'tidy', 'naming', '다 됐어', '이제 끝났어', '커밋할게', 'PR 올릴게', '정리 좀', '이 이름 괜찮아?'. Small grooming each time code is finished, named, reviewed, or committed. 코드를 작성·수정·리뷰·커밋·완료할 때마다 작은 정돈을 습관화하게 만드는 엔지니어링 철학 스킬. 사용하지 않는 변수·import·죽은 코드를 정리하고, 의도가 드러나는 변수·함수 이름을 짓고, 깔끔한 상태로 마무리하도록 트리거. 코드 리뷰, 리팩터링, 변수명 고민, 정리 요청, 안 쓰는 코드 발견 상황에서도 트리거. 새 코드를 짠 직후, 기능 작업이 끝난 직후, 파일을 닫기 전에도 자동으로 발동."
-when_to_use: "Whenever code is being finished, named, reviewed, or committed. 코드 마무리·이름 짓기·커밋 직전의 작은 정돈이 필요한 자리."
+description: Small grooming each time code is finished, named, reviewed, or committed — removing unused imports, variables, and dead code; tightening identifier names to expose intent; and leaving the file one notch cleaner than it was found. Never expands into unrelated refactors that bloat the PR. 코드를 작성·수정·리뷰·커밋·완료할 때마다 작은 정돈을 습관화하는 엔지니어링 철학 스킬.
+when_to_use: Use whenever code is being wrapped up, named, reviewed, or committed — phrases like "done", "ready to commit", "wrap up", "clean up", "tidy", "naming", "다 됐어", "이제 끝났어", "커밋할게", "PR 올릴게", "정리 좀", "이 이름 괜찮아?" — and immediately after finishing a feature, just before closing a file, or whenever unused code is noticed mid-work.
 allowed-tools: Read Edit Grep
 ---
 

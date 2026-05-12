@@ -1,7 +1,7 @@
 ---
 name: keep-it-small
-description: "Triggers on volume-growth signals — 'add a new module', 'build this feature', 'scaffold', 'generate boilerplate', '이거 추가해줘', '기능 더 붙이자', '파일 새로 만들어'. Enforces minimal-code-for-same-output discipline. 코드를 작성·확장·리팩터·생성·추가할 때 '최소한의 코드량으로 같은 결과'를 내도록 강제하는 엔지니어링 철학 스킬. 새 함수·새 클래스·새 컴포넌트·새 유틸·새 추상화·새 의존성 추가 등 코드 줄수가 늘어나는 모든 상황에서 발동. AI로 빠르게 코드를 쏟아내는 바이브코딩(vibe coding) 자동 생성 상황에서 특히 강하게 트리거. '이거 다 필요한가?', '코드가 너무 많아진 거 같아', '리팩터하고 싶어' 같은 신호에서도 발동."
-when_to_use: "Whenever code volume increases or could increase — new functions, files, modules, abstractions, dependencies. 코드 줄수가 늘어나는 모든 자리에서 더 적은 길을 먼저 봐야 할 때."
+description: Enforces minimal-code-for-same-output discipline. Before letting new functions, files, modules, abstractions, or dependencies grow the codebase, this skill checks whether the same outcome can be achieved by extending what already exists, and gives a line-count estimate up front. 코드를 작성·확장·리팩터·생성·추가할 때 최소한의 코드량으로 같은 결과를 내도록 강제하는 엔지니어링 철학 스킬.
+when_to_use: Use whenever code volume is about to increase — adding a new module, feature, file, scaffold, or boilerplate ("이거 추가해줘", "기능 더 붙이자", "파일 새로 만들어", "add a new module", "build this feature", "scaffold", "generate boilerplate") — and especially during AI-rapid-generation / vibe-coding sessions, or when the user expresses doubt about volume ("이거 다 필요한가?", "코드가 너무 많아진 거 같아", "리팩터하고 싶어").
 allowed-tools: Read Edit Grep Glob
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: reuse-not-rewrite
-description: "Triggers on rewrite/remove signals — 'rewrite', 'from scratch', '새로 만들자', '다시 짜자', '갈아엎자', '처음부터', '리팩터링하자', '이거 안 쓰는 것 같아', '지워도 돼?'. Surveys what already exists before writing new code, and refuses to delete code whose purpose is unknown. 새 코드를 짓기 전에 코드베이스 안에 *이미 있는 것*을 먼저 살피고, 잘 만들어둔 게 있으면 그걸 재활용하게 만드는 엔지니어링 철학 스킬. 동시에, 왜 거기 있는지 모르는 코드를 함부로 지우거나 다시 쓰지 않게 막는 안전장치. 기존 함수·모듈·컴포넌트·설정을 *대체하거나 제거하려는* 상황, '내 식으로 다시 짜는 게 빠를 것 같아' 충동, 레거시 코드 앞에서의 망설임에서 발동. 바이브코더가 AI에게 '이거 다 새로 짜줘'라고 할 때 특히 강하게 트리거 — 보통 재활용이 더 안전한 답."
-when_to_use: "Whenever existing code is about to be replaced, removed, or duplicated by new code. 기존 코드를 대체·제거·중복 작성하려는 자리에서 한 번 더 살펴야 할 때."
+description: Surveys what already exists before writing new code, and refuses to delete code whose purpose is unknown. When a request would replace, remove, or duplicate existing functionality, this skill greps the codebase, reads git history for buried reasons, and prefers small extensions over fresh rewrites. 새 코드를 짓기 전에 코드베이스 안에 이미 있는 것을 먼저 살피고, 모르는 코드를 함부로 치우지 않게 만드는 엔지니어링 철학 스킬.
+when_to_use: Use whenever existing code is about to be replaced, removed, or duplicated — phrases like "rewrite", "from scratch", "새로 만들자", "다시 짜자", "갈아엎자", "처음부터", "리팩터링하자", "이거 안 쓰는 것 같아", "지워도 돼?", or the impulse "내 식으로 다시 짜는 게 빠를 것 같아". Strongest against vibe-coding "이거 다 새로 짜줘" requests and hesitation in front of legacy code.
 allowed-tools: Read Grep Glob Bash(git *)
 ---
 

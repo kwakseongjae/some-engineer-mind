@@ -1,7 +1,7 @@
 ---
 name: speak-their-language
-description: "Triggers on cross-role communication moments — 'translate this for non-tech', 'release notes', 'feature spec', '기획팀에서', '고객이', 'PM이', '디자이너가', '보고해야 해', '공유 문서', '릴리즈 노트', '어떻게 설명하지'. Also fires on vague sensory requests — '뭔가 좀 더 자연스럽게', '감이 안 와', '그 느낌으로', '가볍게 한번'. 실무자·기획자·디자이너·운영팀·클라이언트·비개발자 요청자와 주고받을 때, 개발 용어를 걷어내고 그쪽의 감각·일상어로 번역해서 묻고 답하게 만드는 엔지니어링 철학 스킬. 결과 공유·발표·문서화·회의록·이메일·슬랙 작성, 비개발자 대상 설명 상황에서 발동. 변경 사항을 사용자에게 보고하는 마무리 시점에도 자동 발동."
-when_to_use: "Whenever code/technical work is requested by, or reported back to, someone who doesn't think in code. 비개발자와 요청·보고를 주고받는 양방향 번역이 필요한 자리."
+description: Translates between engineering and non-engineering vocabularies. When a vague sensory request comes from a PM, designer, ops team, client, or non-developer stakeholder, this skill converts it into precise intent through a short clarifying exchange; when reporting results back, it strips library/function names and speaks in outcomes the requester actually cares about. 실무자·기획자·디자이너·비개발자 요청자와 주고받을 때 개발 용어를 걷어내고 일상어로 묻고 답하는 엔지니어링 철학 스킬.
+when_to_use: Use whenever code or technical work is being requested by — or reported back to — someone who doesn't think in code. Common triggers include vague sensory phrases ("뭔가 좀 더 자연스럽게", "감이 안 와", "그 느낌으로", "예전에 봤던 그거", "가볍게 한번"), cross-role handoffs ("기획팀에서", "고객이 이렇게", "PM이 원해", "디자이너가 해달래"), and outbound moments like release notes, feature specs, status reports, share docs, Slack/email drafts, or any non-developer-facing summary at the end of a task.
 allowed-tools: Read
 ---
 
